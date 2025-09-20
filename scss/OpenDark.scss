@@ -394,7 +394,7 @@ QTreeView::branch  {
 
 QTextEdit {
     color:$primaryText;
-    background-color: $controlWidgetBackground;
+    background-color: $primaryBackground;
     @include noborder;
     &:disabled {
         color: $disabledText;

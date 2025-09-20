@@ -17,6 +17,8 @@ This pack contains a dark and a light theme as well as preference settings. This
 ## Screenshots
 
 ![Screenshots](resources/images/nordic_sketcher.png)
+![Screenshots](resources/images/nordic_3dview.png)
+![Screenshots](resources/images/nordic_console.png)
 
 ## Adapting
 > To build SCSS sources into QSS files you will need to have qtsass installed: [spyder-ide/qtsass](https://github.com/spyder-ide/qtsass).  

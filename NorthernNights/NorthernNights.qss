@@ -926,7 +926,7 @@ QTreeView::branch {
 
 QTextEdit, QPlainTextEdit {
   color: #eceff4;
-  background-color: #3B4252;
+  background-color: #2e3440;
   border: 1px solid transparent;
   border-radius: 2px; }
   QTextEdit:disabled, QPlainTextEdit:disabled {
