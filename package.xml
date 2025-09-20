@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
- <name>OpenTheme</name>
- <version>2025.05.20</version>
- <date>2025.05.20</date>
- <description>An accessible and coordinated set of Light and Dark themes for FreeCAD</description>
- <maintainer email="nomail@freecad.org">Obelisk79</maintainer>
+ <name>Nordic</name>
+ <version>1.0</version>
+ <date>2025-09-20</date>
+ <description>a nordic prefereance pack for FreeCAD</description>
+ <author>Obelisk79</author>
+ <maintainer email="dev@erroronline.one">error on line 1</maintainer>
  <license file="LICENSE">LGPL-2.1-or-later</license>
- <url type="repository" branch="main">https://github.com/obelisk79/OpenTheme</url>
- <icon>resources/icons/openthemes.svg</icon>
+ <url type="repository" branch="main">https://github.com/erroronline1/NordicFC</url>
+ <icon>resources/icons/nordicfc.svg</icon>
 
 <content>
   <preferencepack>
-    <name>OpenDark</name>
-    <description>A modern Dark theme for FreeCAD based on the Open-Color palette</description>
-    <tag>2024</tag>
+    <name>Northern Nights</name>
+    <description>A dark theme for FreeCAD based on the Nord palette</description>
     <type>Theme</type>
     <tag>dark</tag>
+    <tag>nord</tag>
+    <tag>nordtheme</tag>
     <subdirectory>./OpenDark/</subdirectory>
     <file>OpenDark.qss</file>
   </preferencepack>
   <preferencepack>
-    <name>OpenLight</name>
-    <description>A modern Light theme for FreeCAD based on the Open-Color palette</description>
-    <tag>2024</tag>
+    <name>Northern Lights</name>
+    <description>A light theme for FreeCAD based on the Nord palette</description>
     <type>Theme</type>
     <tag>light</tag>
+    <tag>nord</tag>
+    <tag>nordtheme</tag>
     <subdirectory>./OpenLight/</subdirectory>
     <file>OpenLight.qss</file>
   </preferencepack>
   <preferencepack>
-    <name>OpenPreferences</name>
-    <description>A set of recommended preferences to complement OpenThemes.</description>
-    <tag>OpenThemes recommended settings</tag>
+    <name>Nordic Preferences</name>
+    <description>A set of preferences to complement Nordic.</description>
+    <tag>Nordic preference settings</tag>
     <subdirectory>./OpenPreferences/</subdirectory>
     <file>OpenPreferences.cfg</file>
   </preferencepack>

@@ -1,6 +1,6 @@
 * {
-  background-color: #212529;
-  alternate-background-color: #1a1e22; }
+  background-color: #2e3440;
+  alternate-background-color: #2e3440; }
 
 QTabWidget::pane {
   background-color: transparent;
@@ -14,7 +14,8 @@ QTabWidget::pane {
   Gui--OverlayTabWidget#OverlayLeft {}
   */
 Gui--OverlayTabWidget {
-  qproperty-effectColor: rgba(33, 37, 41, 37%);
+  qproperty-effectColor: #2e3440;
+  /*rgba(33,37,41,96);*/
   qproperty-effectBlurRadius: 20.0;
   qproperty-effectOffsetX: 0.0;
   qproperty-effectOffsetY: 0.0;
@@ -29,11 +30,11 @@ QHeaderView {
   background: transparent; }
 
 QHeaderView::section {
-  color: #dee2e6;
+  color: #eceff4;
   background-color: #dee2e6;
   padding: 2px;
   padding-left: 8px;
-  border: 1px solid #495057; }
+  border: 1px solid #4c566a; }
 
 Gui--OverlayToolButton {
   background-color: transparent;
@@ -41,13 +42,13 @@ Gui--OverlayToolButton {
   border: none; }
 
 Gui--OverlayToolButton::hover {
-  background: #212529; }
+  background: #2e3440; }
 
 QListView {
-  background-color: #1a1e22; }
+  background-color: #2e3440; }
   QListView::indicator {
     border-radius: 2px;
-    border-color: #495057; }
+    border-color: #4c566a; }
 
 QListView::item,
 QTreeView::item {
@@ -63,29 +64,29 @@ QTreeView::item {
 #DocumentTreeItems::item {
   border: 1px solid transparent;
   border-radius: 2px;
-  background-color: #212529; }
+  background-color: #2e3440; }
   #DocumentTreeItems::item:hover {
-    border: 1px solid #264b69;
-    background-color: #1f364d; }
+    border: 1px solid #88c0d0;
+    background-color: #2e3440; }
   #DocumentTreeItems::item:selected {
-    border: 1px solid #264b69;
-    background-color: #1f364d; }
+    border: 1px solid #88c0d0;
+    background-color: #2e3440; }
 
 Gui--PropertyEditor--PropertyEditor {
-  qproperty-groupTextColor: #dee2e6;
-  qproperty-groupBackground: #292f35;
-  qproperty-itemBackground: #212529; }
+  qproperty-groupTextColor: #eceff4;
+  qproperty-groupBackground: #4c566a;
+  qproperty-itemBackground: #2e3440; }
 
 Gui--CallTipsList::item {
-  background-color: #212529; }
+  background-color: #2e3440; }
 
 Gui--CallTipsList::item::selected {
-  color: #f8f9fa;
-  background-color: #1f364d;
-  border: 1px solid #264b69; }
+  color: #d8dee9;
+  background-color: #2e3440;
+  border: 1px solid #88c0d0; }
   Gui--CallTipsList::item::selected:hover {
-    background-color: #292f35;
-    border: 1px solid #264b69; }
+    background-color: #4c566a;
+    border: 1px solid #88c0d0; }
 
 /* Use the following selector to customize title bar for each side */
 /*
@@ -98,26 +99,27 @@ Gui--CallTipsList::item::selected {
   */
 Gui--OverlayTitleBar,
 Gui--OverlaySplitterHandle {
-  color: #adb5bd;
-  background-color: rgba(33, 37, 41, 75%); }
+  color: #d8dee9;
+  background-color: #2e3440;
+  /*rgba(33,37,41,0.75);*/ }
 
 QScrollArea#ClippingScrollArea,
 QWidget#ClippingScrollAreaContents {
   background-color: #ff00ff; }
 
 QSint--ActionGroup QFrame[class="content"] {
-  background-color: #1a1e22;
+  background-color: #2e3440;
   /* Task Panel background color */ }
 
 QSint--ActionGroup QFrame[class="content"] > QWidget {
-  background-color: #212529;
+  background-color: #2e3440;
   /* Task Panel background color */ }
 
 QComboBox QAbstractItemView {
-  background-color: #1a1e22; }
+  background-color: #2e3440; }
 
 QTreeView::indicator {
-  border: 1px solid #495057; }
+  border: 1px solid #4c566a; }
 
 QTreeView::indicator:checked {
   image: url(qss:images_dark-light/check_dark.svg); }
@@ -127,4 +129,4 @@ QLabel {
   background-color: transparent; }
 
 QCheckBox::indicator {
-  background-color: #495057; }
+  background-color: #3B4252; }

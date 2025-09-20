@@ -1,37 +1,30 @@
-![Colours](resources/icons/openthemes.png)
+![Colours](resources/icons/nordicfc.png)
 
-# THIS THEME ADDON IS IN A BETA STATE!
-# PLEASE REPORT BUGS/PROBLEMS ON [GITHUB](https://github.com/obelisk79/OpenTheme/issues)
+# A Nordic Theme and Preference Pack
 
-OpenLight/OpenDark Theme Preference Pack for [FreeCAD](https://www.freecad.org)
+Based on [OpenTheme](https://github.com/obelisk79/OpenTheme), matched to fit the [Nord](https://nordtheme.com) colour palette.
 
-This is a set of light and dark color-impaired accessible aesthetically pleasing themes (OpenLight and OpenDark) for FreeCAD based on the [Open-Color Palette](https://github.com/yeun/open-color) that is WCAG/APCA compliant.
+To be fair, **major** work has been done by these fellows, I primarily adjusted colours and some stylings because I have been in desparate need of a nordic theme for *years*.
 
-I have refactored this theme for improved maintainability using SCSS. New color variants can be created easily without having to re-style the entire spreadsheet. I compile the stylesheets using [QTSASS](https://github.com/spyder-ide/qtsass).
+This pack contains a dark and a light theme as well as preference settings. This theme is likely not matching accessibility requirements regarding contrast.
 
 ## Installation
-
-Using [Preference Packs](https://wiki.freecad.org/Preference_Packs) requires FreeCAD 0.20 or higher.
-
-Preference Packs should be installed via the [Addon Manager](https://github.com/FreeCAD/FreeCAD-addons), but can be [installed manually](https://wiki.freecad.org/Preference_Packs#Distributing_a_pack) if required.
+> Using [Preference Packs](https://wiki.freecad.org/Preference_Packs) requires FreeCAD 0.20 or higher.
+> 
+> Preference Packs should be installed via the [Addon Manager](https://github.com/FreeCAD/FreeCAD-addons), but can be [installed manually](https://wiki.freecad.org/Preference_Packs#Distributing_a_pack) if required.
+> 
 
 ## Screenshots
 
-![Screenshots](resources/images/OpenDark_sketcher.png)
-![Screenshots](resources/images/text_panels.png)
+![Screenshots](resources/images/nordic_sketcher.png)
 
-
-## Contributing
-To build SCSS sources into QSS files you will need to have qtsass installed: [spyder-ide/qtsass](https://github.com/spyder-ide/qtsass).
-
-Once you have it you should modify ONLY `.scss` files and rebuild them using `build.sh` script. 
-
-To watch files for changes and rebuild stylesheets automatically you can use `--watch` flag:
-```bash
-./build.sh --watch
-```
-
-This will make sure that your qss files are always up-to-date.
+## Adapting
+> To build SCSS sources into QSS files you will need to have qtsass installed: [spyder-ide/qtsass](https://github.com/spyder-ide/qtsass).  
+> Once you have it you should modify ONLY `.scss` files and rebuild them using `build.sh` script.  
+> To watch files for changes and rebuild stylesheets automatically you can use `--watch` flag:
+> ```bash
+> ./build.sh --watch
+> ```
 
 ## License
- [LGPLv2](https://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License)
+[LGPLv2](https://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License)

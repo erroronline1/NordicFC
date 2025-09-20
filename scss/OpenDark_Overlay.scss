@@ -23,7 +23,7 @@
   */
 
   Gui--OverlayTabWidget {
-    qproperty-effectColor: rgba(33,37,41,96);
+    qproperty-effectColor: $secondaryBackground; /*rgba(33,37,41,96);*/
     qproperty-effectBlurRadius: 20.0;
     qproperty-effectOffsetX: 0.0;
     qproperty-effectOffsetY: 0.0;
@@ -124,7 +124,7 @@
   Gui--OverlayTitleBar,
   Gui--OverlaySplitterHandle {
     color: $secondaryText;
-    background-color: rgba(33,37,41,0.75);
+    background-color: $secondaryBackground; /*rgba(33,37,41,0.75);*/
   }
 
   QScrollArea#ClippingScrollArea,

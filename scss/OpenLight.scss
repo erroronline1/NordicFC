@@ -7,11 +7,11 @@
 // normal, disabled, controls, hover, pressed
 QAbstractSpinBox {
     color: $primaryText;
-    background-color: $secondaryBackground;
-    @include softborder;
+    background-color: $controlWidgetBackground;
+    @include noborder;
     &:focus {
         border-color: $accentBorder;
-    }
+    } 
     &:hover {
         border-color: $accentBorder;
     }
@@ -48,11 +48,11 @@ QCheckBox {
     }
     &::indicator {
         color: $primaryText;
-        background-color: $secondaryBackground;
-        @include hardborder;
+        background-color: $controlWidgetBackground;
+        @include noborder;
         &:focus {
             border-color: $accentBorder;
-        }
+        } 
         &:disabled {
             background-color: $standardBorder;
         }
@@ -65,17 +65,18 @@ QCheckBox {
 // normal, disabled, hover, pressed, controls are defined
 QComboBox {
     color: $primaryText;
-    background-color: $secondaryBackground;
-    @include softborder;
-    selection-background-color: $controlWidgetBackground;
+    background-color: $controlWidgetBackground;
+    @include noborder;
+    selection-background-color: $selectedElement;
     &:focus {
         border-color: $accentBorder;
-    }
+    } 
     &:disabled {
         color: $disabledText;
     }
     &:hover {
         border-color: $accentBorder;
+        background-color: $accentBorder;
     }
     &::drop-down {
         background-color: transparent;
@@ -134,11 +135,11 @@ QLabel {
 // normal, disabled, hover, focus
 QLineEdit {
     color: $primaryText;
-    background-color: $secondaryBackground;
-    @include softborder;
+    background-color: $controlWidgetBackground;
+    @include noborder;
     &:focus {
         border-color: $accentBorder;
-    }
+    } 
     &:disabled {
         color: $disabledText;
     }
@@ -152,7 +153,7 @@ QLineEdit {
 
 QList {
     font-weight:500;
-    background-color: $secondaryBackground;
+    background-color: $controlWidgetBackground;
     border-radius: 2px;
     border: 1px solid transparent;
     &::item {
@@ -164,7 +165,7 @@ QList {
         border: 1px solid $accentBorder;
     }
     &::item:hover {
-        background-color: $controlWidgetBackground;
+        background-color: $selectedElement;
         border: 1px solid $accentBorder;
         border-radius: 2px;
     }
@@ -201,8 +202,8 @@ QMenu {
     background-color: $secondaryBackground;
     @include softborder;
     &::item {
-        color: $primaryText;
         background-color: $secondaryBackground;
+        color: $primaryText;
         @include noborder;
         border-radius: 0px;
     }
@@ -307,7 +308,7 @@ QScrollBar {
         border: 1px solid transparent;
 
         &:hover {
-            background-color: $accentBackground;
+            background-color: $accentBorder;
             border: 1px solid $accentBorder
         }
     }
@@ -317,27 +318,29 @@ QSizeGrip {
     background: transparent;
 }
 
-QSpinBox {
-    @extend QAbstractSpinBox;
-}
-
 QStatusBar {
     color: $secondaryText;
+}
+
+QSpinBox {
+    @extend QAbstractSpinBox;
 }
 
 QTabBar {
     &::tab {
         color: $primaryText;
-        background-color: $controlWidgetBackground;
-        border: 1px solid $contrastBorder;
+        background-color: $secondaryBackground;
+        border: 0;
+        border-left: 5px solid $contrastBorder;
+        border-radius: 0;
         &:hover {
-            background-color: $accentBackground;
-            border: 1px solid $accentBorder;
+            background-color: $accentBackground; //$standardBorder;
+            border-color: $accentBorder;
         }
         &:selected {
             color: $inverseText;
-            background-color: $accentBackground; //$selectedElement;
-            border: 1px solid $accentBorder;
+            background-color: $selectedElement; //$selectedElement;
+            border-color: $activated;
         }
     }
 }
@@ -392,7 +395,7 @@ QTreeView::branch  {
 QTextEdit {
     color:$primaryText;
     background-color: $secondaryBackground;
-    @include softborder;
+    @include noborder;
     &:disabled {
         color: $disabledText;
         border-color: $standardBorder;
@@ -480,9 +483,10 @@ QFrame[class="panel"] {
 }
 
 /* Panel header */
-QSint--ActionGroup QFrame[class="header"] {;
+QSint--ActionGroup QFrame[class="header"] {
     border-bottom: 3px solid $contrastBorder;
     background-color: transparent;
+    border-radius: 0;
 }
 
 QSint--ActionGroup QFrame[class="header"]:hover {
@@ -584,4 +588,29 @@ QDialog#Gui__Dialog__DlgPreferences QTreeView#groupsTreeView {
 QToolButton#ScrollLeftButton,
 QToolButton#ScrollRightButton {
     background-color: $secondaryBackground;
+}
+
+QToolBox {
+  background-color: transparent;
+  color: $inverseText;
+}
+
+QToolBox::tab {
+  color: $inverseText;
+}
+
+QToolBox::tab:disabled {
+  color: $secondaryText;
+}
+
+QToolBox::tab:selected {
+  color: $inverseText;
+}
+
+QToolBox::tab:selected:disabled {
+  color: $secondaryText;
+}
+
+QToolBox::tab:!selected {
+  color: $inverseText;
 }
