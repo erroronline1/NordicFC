@@ -12,30 +12,30 @@
 
 <content>
   <preferencepack>
-    <name>Northern Nights</name>
+    <name>NorthernNights</name>
     <description>A dark theme for FreeCAD based on the Nord palette</description>
     <type>Theme</type>
     <tag>dark</tag>
     <tag>nord</tag>
     <tag>nordtheme</tag>
-    <subdirectory>./NordicOpenDark/</subdirectory>
+    <subdirectory>./NorthernNights/</subdirectory>
     <file>NordicOpenDark.qss</file>
   </preferencepack>
   <preferencepack>
-    <name>Northern Lights</name>
+    <name>NorthernLights</name>
     <description>A light theme for FreeCAD based on the Nord palette</description>
     <type>Theme</type>
     <tag>light</tag>
     <tag>nord</tag>
     <tag>nordtheme</tag>
-    <subdirectory>./NordicOpenLight/</subdirectory>
+    <subdirectory>./NorthernLights/</subdirectory>
     <file>NordicOpenLight.qss</file>
   </preferencepack>
   <preferencepack>
-    <name>Nordic Preferences</name>
+    <name>NordicPreferences</name>
     <description>A set of preferences to complement Nordic.</description>
     <tag>Nordic preference settings</tag>
-    <subdirectory>./NordicOpenPreferences/</subdirectory>
+    <subdirectory>./NordicPreferences/</subdirectory>
     <file>NordicOpenPreferences.cfg</file>
   </preferencepack>
 </content>

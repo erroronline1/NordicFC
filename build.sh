@@ -41,10 +41,10 @@ done
 (
   trap 'kill 0' SIGINT;
 
-  build ./scss/OpenLight.scss -o ./NordicOpenLight/NordicOpenLight.qss
-  build ./scss/OpenLight_Overlay.scss -o ./NordicOpenLight/overlay/NordicOpenLight_Overlay.qss
-  build ./scss/OpenDark.scss -o ./NordicOpenDark/NordicOpenDark.qss
-  build ./scss/OpenDark_Overlay.scss -o ./NordicOpenDark/overlay/NordicOpenDark_Overlay.qss
+  build ./scss/OpenLight.scss -o ./NorthernLights/NordicOpenLight.qss
+  build ./scss/OpenLight_Overlay.scss -o ./NorthernLights/overlay/NordicOpenLight_Overlay.qss
+  build ./scss/OpenDark.scss -o ./NorthernNights/NordicOpenDark.qss
+  build ./scss/OpenDark_Overlay.scss -o ./NorthernNights/overlay/NordicOpenDark_Overlay.qss
 
   wait
 )
