@@ -29,7 +29,11 @@ This pack contains a dark and a light theme as well as preference settings. This
 > ```
 
 ### The more you know:
-On customizing the package names, directory- and filenames of qss- and cfg-files must be the same!
+On customizing the package names, directory- and filenames of qss- and cfg-files must be the same!  
+The colour values in the cfg files are decimal representations of rgba hex codes and can be converted easily [here](https://www.rapidtables.com/convert/number/hex-to-decimal.html)  
+As long as the preference pack is not available in the addon manager you can add it to the custom repositories within `Preferences > Addon Manager Options` with the repository url `https://github.com/erroronline1/NordicFC` and `main` branch. Also if you're going to tinker your own.
+
+On the way I figured recent settings to be extractable from `~/.var/app/org.freecad.FreeCAD/config/FreeCAD/user.cfg` (Flatpack installation on Mint 21.3).
 
 ## License
 acknowledging the original license: [LGPLv2](https://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License)
