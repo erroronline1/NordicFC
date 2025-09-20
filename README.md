@@ -26,5 +26,8 @@ This pack contains a dark and a light theme as well as preference settings. This
 > ./build.sh --watch
 > ```
 
+### The more you know:
+On customizing the package names, directory- and filenames of qss- and cfg-files must be the same!
+
 ## License
-[LGPLv2](https://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License)
+acknowledging the original license: [LGPLv2](https://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License)

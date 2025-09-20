@@ -19,7 +19,7 @@
     <tag>nord</tag>
     <tag>nordtheme</tag>
     <subdirectory>./NorthernNights/</subdirectory>
-    <file>NordicOpenDark.qss</file>
+    <file>NorthernNights.qss</file>
   </preferencepack>
   <preferencepack>
     <name>NorthernLights</name>
@@ -29,14 +29,14 @@
     <tag>nord</tag>
     <tag>nordtheme</tag>
     <subdirectory>./NorthernLights/</subdirectory>
-    <file>NordicOpenLight.qss</file>
+    <file>NorthernLights.qss</file>
   </preferencepack>
   <preferencepack>
     <name>NordicPreferences</name>
     <description>A set of preferences to complement Nordic.</description>
     <tag>Nordic preference settings</tag>
     <subdirectory>./NordicPreferences/</subdirectory>
-    <file>NordicOpenPreferences.cfg</file>
+    <file>NordicPreferences.cfg</file>
   </preferencepack>
 </content>
 </package>
