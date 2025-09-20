@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
- <name>Nordic</name>
+ <name>NordicFC</name>
  <version>1.0</version>
  <date>2025-09-20</date>
- <description>a nordic prefereance pack for FreeCAD</description>
+ <description>a nordic preference pack for FreeCAD</description>
  <author>Obelisk79</author>
  <maintainer email="dev@erroronline.one">error on line 1</maintainer>
  <license file="LICENSE">LGPL-2.1-or-later</license>
