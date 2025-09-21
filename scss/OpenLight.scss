@@ -125,7 +125,7 @@ QLabel {
     color: $primaryText;
     background-color: transparent;
     &[haslink="true"] {
-        color: $selectedElement;
+        color: $link;
     }
     &:disabled {
         color: $disabledText;

@@ -724,7 +724,7 @@ QLabel {
   color: #eceff4;
   background-color: transparent; }
   QLabel[haslink="true"] {
-    color: #434c5e; }
+    color: #5e81ac; }
   QLabel:disabled {
     color: #677081; }
 
