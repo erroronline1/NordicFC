@@ -40,5 +40,7 @@ As long as the preference pack is not available in the addon manager you can add
 
 On the way I figured recent settings to be extractable from `~/.var/app/org.freecad.FreeCAD/config/FreeCAD/user.cfg` (Flatpack installation on Mint 21.3).
 
+I tried to mark the styleable items as far as I was able to for the next guy. Respective comments can be found within `scss/OpenDark.scss` from where you can search for elements with the same name in the other files. 
+
 ## License
 acknowledging the original license: [LGPLv2](https://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License)

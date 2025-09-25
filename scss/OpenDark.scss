@@ -5,6 +5,9 @@
 @import "./_openDarkImages.scss";
 
 // normal, disabled, controls, hover, pressed
+/*
+e.g. numbers, like preferences > general > number format > decimals
+*/
 QAbstractSpinBox {
     color: $primaryText;
     background-color: $controlWidgetBackground;
@@ -40,6 +43,9 @@ QAbstractSpinBox {
 }
 
 // normal, disabled, hover, checked are defined
+/*
+checkboxes like preferences > general > application > enable splash screen at startup
+*/
 QCheckBox {
     color: $primaryText;
     background: transparent;
@@ -63,6 +69,9 @@ QCheckBox {
 }
 
 // normal, disabled, hover, pressed, controls are defined
+/*
+dropdowns like preferences > general > language
+*/
 QComboBox {
     color: $primaryText;
     background-color: $controlWidgetBackground;
@@ -96,6 +105,9 @@ QDockWidget {
 }
 
 // non-interactive element
+/*
+popups, dialogs, preference window
+*/
 QDialog {
     color: $primaryText;
     background-color: $primaryBackground;
@@ -103,6 +115,9 @@ QDialog {
 }
 
 // non-interactive element
+/*
+lines beside group headers like preference > general > language and number format ------  or preference > general > application ------
+*/
 QGroupBox {
     color: $primaryText;
     border-top: 3px solid $contrastBorder;
@@ -113,6 +128,9 @@ QGroupBox {
 }
 
 // needs refinement applied to property view, spreadsheet etc.
+/*
+headers like "labels & attributes in tree or header in preferences > general > preference packs
+*/
 QHeaderView::section {
     color: $primaryText;
     background-color: $standardBorder;
@@ -121,6 +139,9 @@ QHeaderView::section {
 }
 
 // non-interactive element
+/*
+descriptions for settings and inputs, status bar
+*/
 QLabel {
     color: $primaryText;
     background-color: transparent;
@@ -133,6 +154,9 @@ QLabel {
 }
 
 // normal, disabled, hover, focus
+/*
+single line inputs
+*/
 QLineEdit {
     color: $primaryText;
     background-color: $controlWidgetBackground;
@@ -186,6 +210,9 @@ QListView {
     alternate-background-color: $secondaryBackground;
 }
 
+/*
+you guessed it!
+*/
 QMainWindow {
     &::separator {
         border: 0px solid transparent;
@@ -198,6 +225,9 @@ QMainWindow {
 }
 
 //finished
+/*
+top bar menu popouts
+*/
 QMenu {
     background-color: $secondaryBackground;
     @include softborder;
@@ -228,6 +258,9 @@ QMenu {
     }
 }
 
+/*
+top bar
+*/
 QMenuBar {
     color: $secondaryText;
     background-color: $secondaryBackground;
@@ -261,6 +294,9 @@ QProgressBar:horizontal {
     }
 }
 
+/*
+general button
+*/
 QPushButton {
     color: $primaryText;
     border: 1px solid $contrastBorder;
@@ -283,6 +319,9 @@ QPushButton {
     }
 }
 
+/*
+radio inputs
+*/
 QRadioButton {
     color: $primaryText;
     &:disabled {
@@ -301,6 +340,9 @@ QRadioButton {
     }
 }
 
+/*
+scrollbars
+*/
 QScrollBar {
     background-color: $secondaryBackground;
     &::handle {
@@ -326,6 +368,9 @@ QSpinBox {
     @extend QAbstractSpinBox;
 }
 
+/*
+tabs, e.g. grouped panels or workbenches in tab mode
+*/
 QTabBar {
     &::tab {
         color: $primaryText;
@@ -350,6 +395,9 @@ QTabBar QToolButton { /* the scroll buttons are tool buttons */
     border: 1px solid $contrastBorder;
 }
 
+/*
+spreadsheet
+*/
 QTableWidget {
     background-color: $secondaryBackground;
     alternate-background-color: $secondaryBackground;
@@ -369,6 +417,9 @@ QTableView {
     }
 }
 
+/*
+tree
+*/
 QTreeView {
     background-color: $primaryBackground;
     alternate-background-color: $primaryBackground;
@@ -392,6 +443,9 @@ QTreeView::branch  {
     background: transparent;
 }
 
+/*
+multiline inputs e.g. python console
+*/
 QTextEdit {
     color:$primaryText;
     background-color: $primaryBackground;
@@ -406,6 +460,9 @@ QPlainTextEdit {
     @extend QTextEdit;
 }
 
+/*
+workbench icon button bar
+*/
 QToolBar {
     background-color: $primaryBackground;
     border-bottom: 1px solid $standardBorder;
