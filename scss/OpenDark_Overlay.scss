@@ -144,6 +144,18 @@
     background-color: $secondaryBackground;
   }
 
+  QComboBox {
+      color: $primaryText;
+      &:focus {
+          border-color: $accentBorder;
+      } 
+      &:hover {
+          color: $primaryBackground;
+          border-color: $accentBorder;
+          background-color: $accentBorder;
+      }
+  }
+
   // QAbstractSpinBox {
   //   margin: 3px 6px 3px 6px; }
 

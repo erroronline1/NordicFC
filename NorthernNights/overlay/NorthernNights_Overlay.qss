@@ -45,6 +45,7 @@ Gui--OverlayToolButton::hover {
   background: #2e3440; }
 
 QListView {
+  color: #d8dee9;
   background-color: #2e3440; }
   QListView::indicator {
     border-radius: 2px;
@@ -117,6 +118,15 @@ QSint--ActionGroup QFrame[class="content"] > QWidget {
 
 QComboBox QAbstractItemView {
   background-color: #2e3440; }
+
+QComboBox {
+  color: #eceff4; }
+  QComboBox:focus {
+    border-color: #88c0d0; }
+  QComboBox:hover {
+    color: #2e3440;
+    border-color: #88c0d0;
+    background-color: #88c0d0; }
 
 QTreeView::indicator {
   border: 1px solid #4c566a; }

@@ -84,6 +84,7 @@ QComboBox {
         color: $disabledText;
     }
     &:hover {
+        color: $primaryBackground;
         border-color: $accentBorder;
         background-color: $accentBorder;
     }
@@ -508,7 +509,7 @@ QToolButton {
 }
 
 QToolTip {
-    color: $inverseText;
+    color: $primaryBackground;
     @include borderhover;
     background-color: $tooltipBackground;
 }

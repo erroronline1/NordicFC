@@ -633,6 +633,9 @@ QTreeView::branch#groupsTreeView:has-children:!has-siblings:closed {
 QTreeView::branch#groupsTreeView:has-siblings:!adjoins-item {
   border-image: none 0; }
 
+/*
+e.g. numbers, like preferences > general > number format > decimals
+*/
 QAbstractSpinBox, QSpinBox {
   color: #eceff4;
   background-color: #3B4252;
@@ -658,6 +661,9 @@ QAbstractSpinBox, QSpinBox {
     QAbstractSpinBox::down-button:disabled, QSpinBox::down-button:disabled {
       background-color: #4c566a; }
 
+/*
+checkboxes like preferences > general > application > enable splash screen at startup
+*/
 QCheckBox {
   color: #eceff4;
   background: transparent; }
@@ -675,6 +681,9 @@ QCheckBox {
     QCheckBox::indicator:hover {
       border: 1px solid #88c0d0; }
 
+/*
+dropdowns like preferences > general > language
+*/
 QComboBox, Gui--WorkbenchComboBox {
   color: #eceff4;
   background-color: #3B4252;
@@ -686,6 +695,7 @@ QComboBox, Gui--WorkbenchComboBox {
   QComboBox:disabled, Gui--WorkbenchComboBox:disabled {
     color: #677081; }
   QComboBox:hover, Gui--WorkbenchComboBox:hover {
+    color: #2e3440;
     border-color: #88c0d0;
     background-color: #88c0d0; }
   QComboBox::drop-down, Gui--WorkbenchComboBox::drop-down {
@@ -701,12 +711,18 @@ QDockWidget {
   border: 1px solid #4c566a;
   border-radius: 2px; }
 
+/*
+popups, dialogs, preference window
+*/
 QDialog {
   color: #eceff4;
   background-color: #2e3440;
   border: 1px solid transparent;
   border-radius: 2px; }
 
+/*
+lines beside group headers like preference > general > language and number format ------  or preference > general > application ------
+*/
 QGroupBox {
   color: #eceff4;
   border-top: 3px solid #4c566a; }
@@ -714,12 +730,18 @@ QGroupBox {
     border: 1px solid #4c566a;
     background-color: #2e3440; }
 
+/*
+headers like "labels & attributes in tree or header in preferences > general > preference packs
+*/
 QHeaderView::section {
   color: #eceff4;
   background-color: #4c566a;
   border-left: 1px solid #2e3440;
   border-right: 1px solid #2e3440; }
 
+/*
+descriptions for settings and inputs, status bar
+*/
 QLabel {
   color: #eceff4;
   background-color: transparent; }
@@ -728,6 +750,9 @@ QLabel {
   QLabel:disabled {
     color: #677081; }
 
+/*
+single line inputs
+*/
 QLineEdit {
   color: #eceff4;
   background-color: #3B4252;
@@ -770,6 +795,9 @@ QListView {
   background-color: #2e3440;
   alternate-background-color: #2e3440; }
 
+/*
+you guessed it!
+*/
 QMainWindow::separator {
   border: 0px solid transparent;
   background-color: #4c566a; }
@@ -777,6 +805,9 @@ QMainWindow::separator {
     color: #d8dee9;
     background-color: #2e3440; }
 
+/*
+top bar menu popouts
+*/
 QMenu {
   background-color: #2e3440;
   border: 1px solid #4c566a;
@@ -801,6 +832,9 @@ QMenu {
   QMenu::separator {
     background-color: #4c566a; }
 
+/*
+top bar
+*/
 QMenuBar {
   color: #d8dee9;
   background-color: #2e3440;
@@ -828,6 +862,9 @@ QProgressBar:horizontal {
   QProgressBar:horizontal::chunk {
     background-color: #88c0d0; }
 
+/*
+general button
+*/
 QPushButton, QWidget#wbList QPushButton, QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QWidget#Selector > QToolButton, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton, #WbTabBar > QTabBar #ScrollLeftButton, #WbTabBar > QTabBar #ScrollRightButton {
   color: #eceff4;
   border: 1px solid #4c566a;
@@ -845,6 +882,9 @@ QPushButton, QWidget#wbList QPushButton, QSint--ActionGroup QFrame[class="conten
     color: #d8dee9;
     background-color: #2e3440; }
 
+/*
+radio inputs
+*/
 QRadioButton {
   color: #eceff4; }
   QRadioButton:disabled {
@@ -858,6 +898,9 @@ QRadioButton {
     QRadioButton::indicator:disabled {
       border-color: #4c566a; }
 
+/*
+scrollbars
+*/
 QScrollBar {
   background-color: #2e3440; }
   QScrollBar::handle {
@@ -873,6 +916,9 @@ QSizeGrip {
 QStatusBar {
   color: #d8dee9; }
 
+/*
+tabs, e.g. grouped panels or workbenches in tab mode
+*/
 QTabBar::tab {
   color: #eceff4;
   background-color: #2e3440;
@@ -892,6 +938,9 @@ QTabBar QToolButton, QTabBar QWidget#Selector > QToolButton {
   color: #eceff4;
   border: 1px solid #4c566a; }
 
+/*
+spreadsheet
+*/
 QTableWidget, QTableView {
   background-color: #2e3440;
   alternate-background-color: #2e3440;
@@ -905,6 +954,9 @@ QTableView {
   QTableView::item:indeterminate {
     background-color: #ff00ff; }
 
+/*
+tree
+*/
 QTreeView {
   background-color: #2e3440;
   alternate-background-color: #2e3440;
@@ -924,6 +976,9 @@ QTreeView {
 QTreeView::branch {
   background: transparent; }
 
+/*
+multiline inputs e.g. python console
+*/
 QTextEdit, QPlainTextEdit {
   color: #eceff4;
   background-color: #2e3440;
@@ -933,6 +988,9 @@ QTextEdit, QPlainTextEdit {
     color: #677081;
     border-color: #4c566a; }
 
+/*
+workbench icon button bar
+*/
 QToolBar {
   background-color: #2e3440;
   border-bottom: 1px solid #4c566a; }
@@ -969,7 +1027,7 @@ QToolButton, QWidget#Selector > QToolButton {
     background: transparent; }
 
 QToolTip {
-  color: #d8dee9;
+  color: #2e3440;
   border: 1px solid #88c0d0;
   background-color: #8fbcbb; }
 
