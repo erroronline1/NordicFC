@@ -24,7 +24,7 @@ Be aware that applying the NordicPreferences alters your UI arrangement, make su
 This theme is likely not matching accessibility requirements regarding contrast.
 
 ## Adapting
-The work is based on [OpenTheme](https://github.com/obelisk79/OpenTheme). **Major** work has been done by these fellows, I primarily adjusted colours and some stylings because I have been in desparate need of a nordic theme for *years*.
+The work is based on [OpenTheme](https://github.com/obelisk79/OpenTheme). **Major** work has been done by these fellows, I primarily adjusted colours and some stylings because I have been in desperate need of a nordic theme for *years*.
 
 > To build SCSS sources into QSS files you will need to have qtsass installed: [spyder-ide/qtsass](https://github.com/spyder-ide/qtsass).  
 > Once you have it you should modify ONLY `.scss` files and rebuild them using `build.sh` script.  
