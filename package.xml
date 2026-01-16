@@ -1,43 +1,132 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
-<name>NordicFC</name>
-<version>1.0.1</version>
-<date>2025-12-04</date>
-<description>Nordic theme and preference pack for FreeCAD</description>
-<maintainer email="dev@erroronline.one">error on line 1</maintainer>
-<license file="LICENSE">LGPL-2.1-or-later</license>
-<icon>resources/icons/nordicfc.svg</icon>
-<url type="repository" branch="main">https://github.com/erroronline1/NordicFC</url>
-<url type="readme">https://github.com/erroronline1/NordicFC/blob/main/README.md</url>
-<url type="bugtracker">https://github.com/erroronline1/NordicFC/issues</url>
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+    standalone = 'no'
+?>
+<package
+    format = '1'
+    xmlns = 'https://wiki.freecad.org/Package_Metadata'
+>
 
-<content>
-  <preferencepack>
-    <name>NorthernNights</name>
-    <description>A dark theme for FreeCAD based on the Nord palette</description>
-    <type>Theme</type>
-    <tag>dark</tag>
-    <tag>nord</tag>
-    <tag>nordtheme</tag>
-    <subdirectory>./NorthernNights/</subdirectory>
-    <file>NorthernNights.qss</file>
-  </preferencepack>
-  <preferencepack>
-    <name>NorthernLights</name>
-    <description>A light theme for FreeCAD based on the Nord palette</description>
-    <type>Theme</type>
-    <tag>light</tag>
-    <tag>nord</tag>
-    <tag>nordtheme</tag>
-    <subdirectory>./NorthernLights/</subdirectory>
-    <file>NorthernLights.qss</file>
-  </preferencepack>
-  <preferencepack>
-    <name>NordicPreferences</name>
-    <description>A set of preferences to complement Nordic</description>
-    <tag>Nordic preference settings</tag>
-    <subdirectory>./NordicPreferences/</subdirectory>
-    <file>NordicPreferences.cfg</file>
-  </preferencepack>
-</content>
+    <!--[ Versions ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <freecadmin>1.0.0</freecadmin>
+    <version>1.0.1</version>
+    <date>2025-12-04</date>
+
+    <!--[ Info ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <description>Nordic themes and preference pack.</description>
+    <name>Nordic</name>
+
+    <!--[ Tags ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <tag>Theme</tag>
+    <tag>Light</tag>
+    <tag>Dark</tag>
+
+    <!--[ Maintainers ]――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <maintainer
+        email = 'dev@erroronline.one'
+    >error on line 1</maintainer>
+
+    <!--[ Authors ]――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <author
+        email = 'dev@erroronline.one'
+    >error on line 1</author>
+
+    <!--[ Licenses ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <license
+        file = 'LICENSE'
+    >LGPL-2.1-or-later</license>
+
+    <!--[ Icon ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <icon>resources/icons/nordicfc.svg</icon>
+
+    <!--[ Urls ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <url
+        type = 'documentation'
+    >https://github.com/erroronline1/NordicFC</url>
+
+    <url
+        branch = 'main'
+        type = 'repository'
+    >https://github.com/erroronline1/NordicFC</url>
+
+    <url
+        type = 'bugtracker'
+    >https://github.com/erroronline1/NordicFC/issues</url>
+    
+    <url
+        type = 'discussion'
+    >https://forum.freecad.org/viewtopic.php?p=848525#p848525</url>
+
+    <url
+        type = 'website'
+    >https://github.com/erroronline1/NordicFC</url>
+
+    <url
+        type = 'readme'
+    >https://github.com/erroronline1/NordicFC/blob/main/README.md</url>
+
+    <!--[ Content ]――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+    <content>
+
+        <!--[ Theme : Dark ]―――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+        <preferencepack>
+            
+            <description>Dark theme based on the Nord palette.</description>
+            <name>NorthernNights</name>
+            
+            <subdirectory>./NorthernNights/</subdirectory>
+            <file>NorthernNights.qss</file>
+            <type>Theme</type>
+            
+            <tag>Nordic</tag>
+            <tag>Theme</tag>
+            <tag>Dark</tag>
+
+        </preferencepack>
+
+        <!--[ Theme : Light ]――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+        <preferencepack>
+            
+            <description>Light theme based on the Nord palette.</description>
+            <name>NorthernLights</name>
+            
+            <subdirectory>./NorthernLights/</subdirectory>
+            <file>NorthernLights.qss</file>
+            <type>Theme</type>
+            
+            <tag>Nordic</tag>
+            <tag>Theme</tag>
+            <tag>Light</tag>
+
+        </preferencepack>
+
+        <!--[ Preferences ]――――――――――――――――――――――――――――――――――――――――――――――――――-->
+
+        <preferencepack>
+
+            <description>Preferences to complement the Nordic themes.</description>
+            <name>NordicPreferences</name>
+            
+            <subdirectory>./NordicPreferences/</subdirectory>
+            <file>NordicPreferences.cfg</file>
+
+            <tag>Preferences</tag>
+            <tag>Nordic</tag>
+        
+        </preferencepack>
+
+    </content>
+
 </package>
